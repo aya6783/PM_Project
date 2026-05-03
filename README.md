@@ -48,7 +48,11 @@ mediconnect/
 ### Admin (Admin Panel)
 - Login with admin credentials
 - Add new doctors with photo upload
+<<<<<<< HEAD
 - View and manage all doctors (toggle availability)
+=======
+- View and manage all doctors 
+>>>>>>> b1d57efa62e407019cf55b1767469193c3af786b
 - View all appointments across the platform
 - Cancel any appointment
 
@@ -61,7 +65,10 @@ mediconnect/
 - Node.js v18+
 - A MongoDB Atlas cluster (or local MongoDB instance)
 - A Cloudinary account
+<<<<<<< HEAD
 - Razorpay and/or Stripe accounts (for payment features)
+=======
+>>>>>>> b1d57efa62e407019cf55b1767469193c3af786b
 
 ---
 
@@ -72,6 +79,7 @@ cd backend
 npm install
 ```
 
+<<<<<<< HEAD
 Create a `.env` file in the `backend/` directory:
 
 ```env
@@ -101,6 +109,8 @@ RAZORPAY_KEY_SECRET=your_razorpay_key_secret
 STRIPE_SECRET_KEY=your_stripe_secret_key
 ```
 
+=======
+>>>>>>> b1d57efa62e407019cf55b1767469193c3af786b
 Start the server:
 
 ```bash
@@ -122,6 +132,7 @@ cd frontend
 npm install
 ```
 
+<<<<<<< HEAD
 Create a `.env` file in the `frontend/` directory:
 
 ```env
@@ -129,6 +140,8 @@ VITE_BACKEND_URL=http://localhost:4000
 VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
 ```
 
+=======
+>>>>>>> b1d57efa62e407019cf55b1767469193c3af786b
 Start the dev server:
 
 ```bash
@@ -146,6 +159,7 @@ cd admin
 npm install
 ```
 
+<<<<<<< HEAD
 Create a `.env` file in the `admin/` directory:
 
 ```env
@@ -219,5 +233,24 @@ All routes are prefixed with the base URL (e.g. `http://localhost:4000`).
 - Pediatricians
 - Neurologist
 - Gastroenterologist
+=======
+Start the dev server:
+
+```bash
+npm run dev
+```
+
+Runs on **http://localhost:5174** by default (or the next available port).
+
+---
+
+## Student IDS
+
+- 230103115
+- 230103069
+- 250103123
+- 230103185 
+
+>>>>>>> b1d57efa62e407019cf55b1767469193c3af786b
 
 ---
