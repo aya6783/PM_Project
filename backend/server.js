@@ -8,9 +8,7 @@ import doctorRouter from "./routes/doctorRoute.js"
 import adminRouter from "./routes/adminRoute.js"
 
 const app = express()
-const port = process.env.PORT || 4000
-connectDB()
-connectCloudinary()
+const port = process.env.PORT || 8080
 
 app.use(express.json())
 app.use(cors())
@@ -20,7 +18,18 @@ app.use("/api/admin", adminRouter)
 app.use("/api/doctor", doctorRouter)
 
 app.get("/", (req, res) => {
-    res.send("API Working")
+  res.send("API Working")
 })
 
-app.listen(port, () => console.log(`Server started on PORT:${port}`))
+const startServer = async () => {
+  try {
+    await connectDB()
+    await connectCloudinary()
+    app.listen(port, () => console.log(`Server started on PORT:${port}`))
+  } catch (error) {
+    console.error("Failed to start server:", error)
+    process.exit(1)
+  }
+}
+
+startServer()
